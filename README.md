@@ -34,3 +34,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+### LEER ###
+# BeeCare Site
+Landing de BeeCare construida con **Next.js 15 (App Router) + TypeScript + Tailwind CSS** y desplegada en **Vercel**.
+
+## Requisitos
+- **Node.js 18+** y **npm** (o pnpm).
+- **Git** instalado.
+- Acceso a este repositorio en GitHub.
+- (Opcional) Acceso al proyecto en **Vercel** para ver deploys/analytics.
+
+## Primeros pasos (clonar y correr)
+```bash
+# 1) Clonar
+git clone https://github.com/<tu-usuario>/beecare-sitio.git
+cd beecare-sitio
+
+# 2) Instalar dependencias
+npm install
+
+# 3) Correr en desarrollo
+npm run dev
+# Abrir http://localhost:3000
