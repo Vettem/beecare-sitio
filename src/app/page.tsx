@@ -45,8 +45,12 @@ export default function Home() {
       {/* App */}
       <section id="app" className="px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold">App BeeCare</h2>
-        <p className="mt-4 text-gray-700">Prototipo en Expo/React Native. Próximamente en tiendas.</p>
-        <a className="underline" href="#" onClick={(e) => e.preventDefault()}>Ver demo (próximamente)</a>
+        <p className="mt-4 text-gray-700">
+          Prototipo en Expo/React Native. Próximamente en tiendas.
+        </p>
+        <a className="underline" href="/demo">
+          Ver demo (próximamente)
+        </a>
       </section>
 
       {/* Contacto */}
