@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
+/* Tailwind v4: define tokens en @theme para usar clases como text-bee-primary */
+@theme {
+  /* Fuentes del layout */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Paleta BeeCare */
+  --color-bee-primary: #2E5E2A;
+  --color-bee-leaf: #6BA36B;
+  --color-bee-cream: #F5FAF2;
+  --color-bee-yellow: #F3C93A;
+  --color-bee-coral: #E96A5D;
+  --color-bee-pink: #F7B4C0;
+  --color-bee-lavender: #B69CCF;
+  --color-bee-orange: #F2A65A;
+  --color-bee-brown: #5C4B3A;
+}
+
+/* (Opcional) Conserva estas si te sirven para otros estilos custom */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +31,15 @@
   }
 }
 
+/* Base: usa la paleta BeeCare */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Fondo claro verdoso global */
+  @apply bg-bee-cream text-slate-800;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Selección de texto */
+::selection {
+  background: var(--color-bee-yellow);
+  color: #111827;
 }
