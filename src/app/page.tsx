@@ -23,11 +23,11 @@ export default function Home() {
       {/* Título y subtítulo */}
       <section className="px-6 pt-6 md:pt-8 pb-4 max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-bee-primary">
-          BeeCare
-        </h1>
-        <p className="mt-2 md:mt-3 text-base md:text-lg text-slate-700">
           Monitoreo inteligente de colmenas con audio e IA.
-        </p>
+        </h1>
+        {/*<p className="mt-2 md:mt-3 text-base md:text-lg text-slate-700">
+          Monitoreo inteligente de colmenas con audio e IA.
+        </p>*/}
       </section>
 
       {/* BENEFICIOS (intro) */}
@@ -84,7 +84,7 @@ export default function Home() {
             <h3 className="font-semibold text-lg text-bee-primary">Dispositivo</h3>
             <ul className="mt-2 list-disc list-inside text-slate-700 space-y-1">
               <li>ESP32 (opcional Arduino/Raspberry Pi)</li>
-              <li>Micrófono MEMS, caja y alimentación</li>
+              <li>Micrófono INMP441, caja y alimentación</li>
             </ul>
           </div>
           <div className="rounded-2xl border p-6 bg-white">
@@ -166,9 +166,13 @@ export default function Home() {
         <p className="mt-2 text-slate-700">Escríbenos y conversemos un piloto.</p>
         <div className="mt-4 inline-flex gap-3">
           <a className="px-5 py-3 rounded-xl bg-bee-primary text-white"
-            href="https://wa.me/<tu_numero>?text=Hola%20BeeCare%20👋">WhatsApp</a>
+            href="https://wa.me/56930687262?text=Hola%20BeeCare%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s">
+            WhatsApp
+          </a>
           <a className="px-5 py-3 rounded-xl border border-bee-primary text-bee-primary"
-            href="mailto:contacto@beecare.cl?subject=Interés%20en%20BeeCare">Email</a>
+            href="mailto:beecarechile@gmail.com?subject=Inter%C3%A9s%20en%20BeeCare&body=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20BeeCare.">
+            Email
+          </a>
         </div>
       </section>
 

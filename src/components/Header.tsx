@@ -73,7 +73,7 @@ export default function Header() {
                         ))}
                         <li>
                             <a
-                                href="https://wa.me/<tu_numero>?text=Hola%20BeeCare%20👋"
+                                href="https://wa.me/56930687262?text=Hola%20BeeCare%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s"
                                 className="block px-3 py-2 rounded-lg bg-bee-primary text-white text-center"
                                 onClick={() => setOpen(false)}
                             >
