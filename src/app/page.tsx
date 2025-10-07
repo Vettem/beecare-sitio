@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* HERO — Banner full width, responsive */}
+    <main className="min-h-screen pt-16">{/* compensa header fijo (h-16) */}
+      <Header />
+
+      {/* HERO */}
       <section className="relative w-full bg-bee-cream">
         <div className="relative h-[180px] sm:h-[200px] md:h-[320px] lg:h-[380px]">
           <Image
@@ -17,8 +20,7 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* Título y subtítulo debajo del banner */}
+      {/* Título y subtítulo */}
       <section className="px-6 pt-6 md:pt-8 pb-4 max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-bee-primary">
           BeeCare
@@ -28,23 +30,22 @@ export default function Home() {
         </p>
       </section>
 
-
-      {/* Beneficios */}
-      <section className="px-6 py-12 max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+      {/* BENEFICIOS (intro) */}
+      <section id="caracteristicas" className="scroll-mt-24 px-6 py-12 max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
         {[
           { t: "Monitoreo 24/7", d: "Audio + sensores para conocer el estado de la colmena." },
           { t: "Alertas tempranas", d: "Avisos en tu app ante patrones sospechosos." },
           { t: "Instalación simple", d: "Hardware accesible (ESP32/Arduino/RPi) y app móvil." },
         ].map((b) => (
-          <div key={b.t} className="p-6 rounded-2xl border bg-white/70">
+          <div key={b.t} className="p-6 rounded-2xl border bg-white/90">
             <h3 className="text-xl font-semibold text-bee-primary">{b.t}</h3>
             <p className="mt-2 text-slate-700">{b.d}</p>
           </div>
         ))}
       </section>
 
-      {/* Cómo funciona */}
-      <section id="como-funciona" className="px-6 py-16 max-w-6xl mx-auto">
+      {/* CÓMO FUNCIONA */}
+      <section id="como-funciona" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Cómo funciona</h2>
         <ol className="mt-6 space-y-4 text-slate-700 list-decimal list-inside">
           <li>Captura de audio y métricas (temperatura, batería, actividad).</li>
@@ -54,7 +55,7 @@ export default function Home() {
         </ol>
       </section>
 
-      {/* Por qué BeeCare (Problema & Propuesta) */}
+      {/* POR QUÉ BEECARE */}
       <section className="px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Por qué BeeCare</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
@@ -75,10 +76,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Características (dejamos las existentes) */}
-
-      {/* Tecnología */}
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      {/* TECNOLOGÍA */}
+      <section id="tecnologia" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Tecnología</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           <div className="rounded-2xl border p-6 bg-white">
@@ -106,8 +105,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Beneficios / casos */}
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      {/* BENEFICIOS */}
+      <section id="beneficios" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Beneficios</h2>
         <ul className="mt-6 grid md:grid-cols-2 gap-4 text-slate-700">
           <li className="rounded-xl border bg-white p-4">Detección temprana de comportamientos fuera de lo común.</li>
@@ -117,8 +116,8 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* Roadmap (derivado de tus sprints) */}
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      {/* ROADMAP */}
+      <section id="roadmap" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Roadmap</h2>
         <ol className="mt-6 space-y-3 text-slate-700 list-decimal list-inside">
           <li><strong>03/08</strong>: Entender dificultades y necesidades de apicultores (descubrimiento).</li>
@@ -131,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      <section id="faq" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Preguntas frecuentes</h2>
         <div className="mt-6 space-y-3">
           <details className="rounded-xl border bg-white p-4">
@@ -150,7 +149,6 @@ export default function Home() {
             <summary className="font-medium text-bee-primary cursor-pointer">¿Cuánto cuesta?</summary>
             <p className="mt-2 text-slate-700">En desarrollo; estimación por kit de hardware y/o suscripción al servicio.</p>
           </details>
-          {/* extras útiles */}
           <details className="rounded-xl border bg-white p-4">
             <summary className="font-medium text-bee-primary cursor-pointer">¿Qué pasa si no hay internet?</summary>
             <p className="mt-2 text-slate-700">Se puede bufferizar localmente y sincronizar cuando vuelva la conexión (según configuración).</p>
@@ -162,8 +160,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA final */}
-      <section className="px-6 py-16 max-w-6xl mx-auto text-center">
+      {/* CONTACTO */}
+      <section id="contacto" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-bee-primary">¿Te interesa BeeCare?</h2>
         <p className="mt-2 text-slate-700">Escríbenos y conversemos un piloto.</p>
         <div className="mt-4 inline-flex gap-3">
