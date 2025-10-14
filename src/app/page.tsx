@@ -116,19 +116,6 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* ROADMAP */}
-      <section id="roadmap" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-bee-primary">Roadmap</h2>
-        <ol className="mt-6 space-y-3 text-slate-700 list-decimal list-inside">
-          <li><strong>03/08</strong>: Entender dificultades y necesidades de apicultores (descubrimiento).</li>
-          <li><strong>24/09</strong>: Interfaz simple para actuar con rapidez (diseño UI básico).</li>
-          <li><strong>01/10</strong>: App básica, segura y clara (frontend funcional).</li>
-          <li><strong>29/10</strong>: Base de datos robusta y fácil de entender (Firebase).</li>
-          <li><strong>26/11</strong>: Entrenamiento del modelo de IA (clasificador healthy/sick).</li>
-          <li><strong>17/12</strong>: Validación del dispositivo en tiempo real en el apiario.</li>
-        </ol>
-      </section>
-
       {/* FAQ */}
       <section id="faq" className="scroll-mt-24 px-6 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-bee-primary">Preguntas frecuentes</h2>
